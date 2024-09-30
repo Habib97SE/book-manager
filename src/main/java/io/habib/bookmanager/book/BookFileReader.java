@@ -97,4 +97,13 @@ public class BookFileReader {
         return null;
     }
 
+    public List<Book> getBooksByTitle(String theCatcherInTheRye) {
+        List<Book> books = new ArrayList<>();
+        for (Book book : getBooks()) {
+            if (book.getTitle().equals(theCatcherInTheRye)) {
+                books.add(book);
+            }
+        }
+        return books;
+    }
 }
