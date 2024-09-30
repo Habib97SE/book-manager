@@ -11,6 +11,9 @@ public class BookBuilder {
     private String language = "";
     private String description = "";
 
+    public BookBuilder() {
+    }
+
     public BookBuilder setId(Integer id) {
         this.id = id;
         return this;
