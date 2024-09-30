@@ -71,4 +71,12 @@ class BookFileReaderTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void shouldThrowExceptionWhenBookNotFoundById() {
+        // arrange
+        // act
+        // assert
+        assertThrows(IllegalArgumentException.class, () -> bookFileReader.getBookById(1000));
+    }
+
 }

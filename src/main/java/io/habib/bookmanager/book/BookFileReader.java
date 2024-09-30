@@ -85,7 +85,7 @@ public class BookFileReader {
                 return book;
             }
         }
-        return null;
+        throw new IllegalArgumentException("Book not found");
     }
 
     public Book getBookByIsbn(String isbn) {
