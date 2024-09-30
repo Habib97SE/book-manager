@@ -43,8 +43,32 @@ class BookFileReaderTest {
 
     @Test
     void shouldReturnBookByTitle () {
+        // arrange
         List<Book> books = List.of(new Book(1, "The Catcher in the Rye", "J.D. Salinger", "9780316769488", "1951-07-16", "English", "The Catcher in the Rye is a novel by J. D. Salinger"));
+        // act
         List<Book> actual = bookFileReader.getBooksByTitle("The Catcher in the Rye");
+        // assert
         assertEquals(books, actual);
     }
+
+    @Test
+    void shouldReturnBookByISBN () {
+        // arrange
+        Book expected = new Book(1, "The Catcher in the Rye", "J.D. Salinger", "9780316769488", "1951-07-16", "English", "The Catcher in the Rye is a novel by J. D. Salinger");
+        // act
+        Book actual = bookFileReader.getBookByIsbn("9780316769488");
+        // assert
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void shouldReturnBookById () {
+        // arrange
+        Book expected = new Book(1, "The Catcher in the Rye", "J.D. Salinger", "9780316769488", "1951-07-16", "English", "The Catcher in the Rye is a novel by J. D. Salinger");
+        // act
+        Book actual = bookFileReader.getBookById(1);
+        // assert
+        assertEquals(expected, actual);
+    }
+
 }
