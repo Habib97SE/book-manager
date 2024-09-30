@@ -79,4 +79,12 @@ class BookFileReaderTest {
         assertThrows(IllegalArgumentException.class, () -> bookFileReader.getBookById(1000));
     }
 
+    @Test
+    void shouldThrowExceptionWhenBookNotFoundByIsbn() {
+        // arrange
+        // act
+        // assert
+        assertThrows(IllegalArgumentException.class, () -> bookFileReader.getBookByIsbn("123456789"));
+    }
+
 }

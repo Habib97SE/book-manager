@@ -11,7 +11,8 @@ import java.util.List;
 
 @Component
 public class BookFileReader {
-    private final URI filePath = BookFileReader.class.getClassLoader().getResource("data/books.txt").toURI();
+    private final URI filePath = BookFileReader.class.getClassLoader().
+            getResource("data/books.txt").toURI();
     private final String bookData;
 
     public BookFileReader() throws URISyntaxException, IOException {
@@ -48,9 +49,8 @@ public class BookFileReader {
 
     public List<Book> getBooks() {
         List<Book> books = new ArrayList<>();
-        System.out.println(bookData);
         String[] bookDataArray = bookData.split("\n");
-        System.out.println(bookDataArray.length);
+
         for (String bookData : bookDataArray) {
             String[] bookDataFields = bookData.split(",");
             // Create book object using BookBuilder
@@ -63,7 +63,6 @@ public class BookFileReader {
                     .setLanguage(bookDataFields[5].trim())
                     .setDescription(bookDataFields[6].trim())
                     .build();
-            System.out.println(book);
             books.add(book);
         }
         return books;
@@ -94,7 +93,7 @@ public class BookFileReader {
                 return book;
             }
         }
-        return null;
+        throw new IllegalArgumentException("Book not found");
     }
 
     public List<Book> getBooksByTitle(String theCatcherInTheRye) {

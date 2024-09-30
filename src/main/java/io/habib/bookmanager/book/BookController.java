@@ -3,10 +3,12 @@ package io.habib.bookmanager.book;
 import io.habib.bookmanager.book.model.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
+import java.util.Objects;
 
 @RestController
 
@@ -20,8 +22,22 @@ public class BookController {
     }
 
     @GetMapping("/books")
-    public List<Book> getBooks() {
-        return bookFileReader.getBooks();
+    public List<Book> getBooks(
+            @RequestParam(required = false) Integer id,
+            @RequestParam(required = false) String description) {
+        List<Book> books = bookFileReader.getBooks();
+        if (id != null) {
+            books = books.stream()
+                    .filter(book -> book.getId() == id)
+                    .findFirst()
+                    .stream().toList();
+        }
+        if (description != null) {
+            books = books.stream()
+                    .filter(book -> book.getDescription().contains(description))
+                    .toList();
+        }
+        return books;
     }
 
     @GetMapping("/books/{id}")
