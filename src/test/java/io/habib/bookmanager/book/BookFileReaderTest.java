@@ -32,11 +32,11 @@ class BookFileReaderTest {
     @Test
     void shouldReturnAuthor() {
         // arrange
-        Book book = new Book(1, "The Catcher in the Rye", "J.D Salinger", "9780316769488", "1951-07-16", "English", "The Catcher in the Rye is a novel by J. D. Salinger, partially published in serial form in 1945–1946 and as a novel in 1951.");
+        Book book = new Book(1, "The Catcher in the Rye", "J.D. Salinger", "9780316769488", "1951-07-16", "English", "The Catcher in the Rye is a novel by J. D. Salinger");
         List<Book> books = new ArrayList<>();
         books.add(book);
         // act
-        List<Book> actual = bookFileReader.getBooksByAuthor("J.D Salinger");
+        List<Book> actual = bookFileReader.getBooksByAuthor("J.D. Salinger");
         // assert
         assertEquals(books, actual);
     }

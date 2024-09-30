@@ -56,13 +56,14 @@ public class BookFileReader {
             // Create book object using BookBuilder
             Book book = new BookBuilder()
                     .setId(Integer.parseInt(bookDataFields[0]))
-                    .setTitle(bookDataFields[1])
-                    .setAuthor(bookDataFields[2])
-                    .setIsbn(bookDataFields[3])
-                    .setPublicationDate(bookDataFields[4])
-                    .setLanguage(bookDataFields[5])
-                    .setDescription(bookDataFields[6])
+                    .setTitle(bookDataFields[1].trim())
+                    .setAuthor(bookDataFields[2].trim())
+                    .setIsbn(bookDataFields[3].trim())
+                    .setPublicationDate(bookDataFields[4].trim())
+                    .setLanguage(bookDataFields[5].trim())
+                    .setDescription(bookDataFields[6].trim())
                     .build();
+            System.out.println(book);
             books.add(book);
         }
         return books;
