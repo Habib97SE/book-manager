@@ -1,6 +1,7 @@
 package io.habib.bookmanager.book;
 
 import io.habib.bookmanager.book.model.Book;
+import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.net.URI;
@@ -8,8 +9,9 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class BookFileReader {
-    private final URI filePath = BookFileReader.class.getClassLoader().getResource("data/book.txt").toURI();
+    private final URI filePath = BookFileReader.class.getClassLoader().getResource("data/books.txt").toURI();
     private final String bookData;
 
     public BookFileReader() throws URISyntaxException, IOException {
@@ -17,19 +19,24 @@ public class BookFileReader {
     }
 
     private String readBookData() throws IOException {
-        // Read the book data from the file
         StringBuilder data = new StringBuilder();
         File file = new File(filePath);
-        // Read the book data from the file
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         String line;
+        boolean firstLine = true;
         while ((line = bufferedReader.readLine()) != null) {
-            data.append(line);
+            if (firstLine) {
+                firstLine = false;
+                continue;
+            }
+            // Append the line and add a newline character
+            data.append(line).append("\n");
         }
         bufferedReader.close();
         return data.toString();
     }
+
 
     public String getBookData() {
         return bookData;
@@ -41,7 +48,9 @@ public class BookFileReader {
 
     public List<Book> getBooks() {
         List<Book> books = new ArrayList<>();
+        System.out.println(bookData);
         String[] bookDataArray = bookData.split("\n");
+        System.out.println(bookDataArray.length);
         for (String bookData : bookDataArray) {
             String[] bookDataFields = bookData.split(",");
             // Create book object using BookBuilder
@@ -78,7 +87,7 @@ public class BookFileReader {
         return null;
     }
 
-    public Book getBookByIsbn (String isbn) {
+    public Book getBookByIsbn(String isbn) {
         for (Book book : getBooks()) {
             if (book.getIsbn().equals(isbn)) {
                 return book;
