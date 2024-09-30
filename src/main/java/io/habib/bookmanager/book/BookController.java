@@ -25,19 +25,13 @@ public class BookController {
     public List<Book> getBooks(
             @RequestParam(required = false) Integer id,
             @RequestParam(required = false) String description) {
-        List<Book> books = bookFileReader.getBooks();
-        if (id != null) {
-            books = books.stream()
-                    .filter(book -> book.getId() == id)
-                    .findFirst()
-                    .stream().toList();
+        if (id == null && description == null) {
+            return bookFileReader.getBooks();
         }
-        if (description != null) {
-            books = books.stream()
-                    .filter(book -> book.getDescription().contains(description))
-                    .toList();
-        }
-        return books;
+        return bookFileReader.getBooks().stream()
+                .filter(book -> id == null || Objects.equals(book.getId(), id))
+                .filter(book -> description == null || book.getDescription().contains(description))
+                .toList();
     }
 
     @GetMapping("/books/{id}")

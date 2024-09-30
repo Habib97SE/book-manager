@@ -1,10 +1,69 @@
 id, title, author, isbn, publicationDate, language, description
 1, The Catcher in the Rye, J.D. Salinger, 9780316769488, 1951-07-16, English, The Catcher in the Rye is a novel by J. D. Salinger, partially published in serial form in 1945–1946 and as a novel in 1951.
-2, To Kill a Mockingbird, Harper Lee, 9780060935467, 1960-07-11, English, To Kill a Mockingbird is a novel by Harper Lee published in 1960. It was immediately successful, winning the Pulitzer Prize, and has become a classic of modern American literature.
-3, 1984, George Orwell, 9780451524935, 1949-06-08, English, Nineteen Eighty-Four: A Novel; often referred to as 1984; is a dystopian social science fiction novel by the English novelist George Orwell. It was published on 8 June 1949 by Secker & Warburg as Orwell's ninth and final book completed in his lifetime.
-4, The Great Gatsby, F. Scott Fitzgerald, 9780743273565, 1925-04-10, English, The Great Gatsby is a 1925 novel by American writer F. Scott Fitzgerald. Set in the Jazz Age on Long Island, near New York City, the novel depicts first-person narrator Nick Carraway's interactions with mysterious millionaire Jay Gatsby and Gatsby's obsession to reunite with his former lover, Daisy Buchanan.
-5, Pride and Prejudice, Jane Austen, 9780679783268, 1813-01-28, English, Pride and Prejudice is a romantic novel of manners written by Jane Austen in 1813. The novel follows the character development of Elizabeth Bennet, the dynamic protagonist of the book who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness. Its humour lies in its honest depiction of manners, education, marriage, and money during the Regency era in Great Britain.
-6, Animal Farm, George Orwell, 9780451526342, 1945-08-17, English, Animal Farm is an allegorical novella by George Orwell, first published in England on 17 August 1945. The book tells the story of a group of farm animals who rebel against their human farmer, hoping to create a society where the animals can be equal, free, and happy. Ultimately, however, the rebellion is betrayed, and the farm ends up in a state as bad as it was before, under the dictatorship of a pig named Napoleon.
-7, The Lord of the Rings, J.R.R. Tolkien, 9780618640157, 1954-07-29, English, The Lord of the Rings is an epic high-fantasy novel by the English author and scholar J. R. R. Tolkien. Set in Middle-earth, the world at some distant time in the past, the story began as a sequel to Tolkien's 1937 children's book The Hobbit, but eventually developed into a much larger work. It was written in stages between 1937 and 1949, with much of it being created during World War II.
-8, The Hobbit, J.R.R. Tolkien, 9780345534835, 1937-09-21, English, The Hobbit, or There and Back Again is a children's fantasy novel by English author J. R. R. Tolkien. It was published on 21 September 1937 to wide critical acclaim, being nominated for the Carnegie Medal and awarded a prize from the New York Herald Tribune for best juvenile fiction. The book remains popular and is recognized as a classic in children's literature.
-9, The Da Vinci Code, Dan Brown, 9780307474278, 2003-03-18, English, The Da Vinci Code is a 2003 mystery thriller novel by Dan Brown. It follows "symbologist" Robert Langdon and cryptologist Sophie Neveu after a
+2, To Kill a Mockingbird, Harper Lee, 9780060935467, 1960-07-11, English, To Kill a Mockingbird is a novel by Harper Lee published in 1960.
+3, 1984, George Orwell, 9780451524935, 1949-06-08, English, Nineteen Eighty-Four: A Novel; often referred to as 1984; is a dystopian social science fiction novel.
+4, The Great Gatsby, F. Scott Fitzgerald, 9780743273565, 1925-04-10, English, The Great Gatsby is a 1925 novel by F. Scott Fitzgerald set in the Jazz Age.
+5, Pride and Prejudice, Jane Austen, 9780679783268, 1813-01-28, English, Pride and Prejudice is a romantic novel by Jane Austen in 1813.
+6, Animal Farm, George Orwell, 9780451526342, 1945-08-17, English, Animal Farm is an allegorical novella by George Orwell, published in 1945.
+7, The Lord of the Rings, J.R.R. Tolkien, 9780618640157, 1954-07-29, English, The Lord of the Rings is an epic high-fantasy novel by J. R. R. Tolkien.
+8, The Hobbit, J.R.R. Tolkien, 9780345534835, 1937-09-21, English, The Hobbit, or There and Back Again is a children's fantasy novel by J. R. R. Tolkien.
+9, The Da Vinci Code, Dan Brown, 9780307474278, 2003-03-18, English, The Da Vinci Code is a 2003 mystery thriller novel by Dan Brown.
+10, Brave New World, Aldous Huxley, 9780060850523, 1932-08-01, English, Brave New World is a dystopian social science fiction novel by Aldous Huxley.
+11, Fahrenheit 451, Ray Bradbury, 9781451673319, 1953-10-19, English, Fahrenheit 451 is a dystopian novel by American writer Ray Bradbury.
+12, Moby-Dick, Herman Melville, 9781503280786, 1851-11-14, English, Moby-Dick is a novel by Herman Melville, first published in 1851.
+13, Crime and Punishment, Fyodor Dostoevsky, 9780143058144, 1866-01-01, English, Crime and Punishment is a novel by the Russian author Fyodor Dostoevsky.
+14, War and Peace, Leo Tolstoy, 9780140447934, 1869-01-01, English, War and Peace is a novel by Leo Tolstoy, first published from 1865 to 1869.
+15, Jane Eyre, Charlotte Brontë, 9780142437209, 1847-10-16, English, Jane Eyre is a novel by English writer Charlotte Brontë.
+16, Wuthering Heights, Emily Brontë, 9780141439556, 1847-12-01, English, Wuthering Heights is a novel by Emily Brontë published in 1847.
+17, The Picture of Dorian Gray, Oscar Wilde, 9780141439570, 1890-06-20, English, The Picture of Dorian Gray is a philosophical novel by Oscar Wilde.
+18, Dracula, Bram Stoker, 9780141439846, 1897-05-26, English, Dracula is a Gothic horror novel by Irish author Bram Stoker.
+19, Frankenstein, Mary Shelley, 9780143131847, 1818-01-01, English, Frankenstein is a novel written by English author Mary Shelley.
+20, The Scarlet Letter, Nathaniel Hawthorne, 9780142437261, 1850-03-16, English, The Scarlet Letter is a work of historical fiction by Nathaniel Hawthorne.
+21, The Odyssey, Homer, 9780140268867, -800-01-01, English, The Odyssey is one of two major ancient Greek epic poems attributed to Homer.
+22, The Iliad, Homer, 9780140275360, -850-01-01, English, The Iliad is an ancient Greek epic poem in dactylic hexameter, attributed to Homer.
+23, Les Misérables, Victor Hugo, 9780451419439, 1862-01-01, English, Les Misérables is a novel by French writer Victor Hugo.
+24, The Brothers Karamazov, Fyodor Dostoevsky, 9780374528379, 1880-01-01, English, The Brothers Karamazov is the final novel by Russian author Fyodor Dostoevsky.
+25, The Divine Comedy, Dante Alighieri, 9780140448955, 1320-01-01, English, The Divine Comedy is an epic poem by Dante Alighieri.
+26, Don Quixote, Miguel de Cervantes, 9780142437230, 1605-01-16, English, Don Quixote is a Spanish novel by Miguel de Cervantes.
+27, The Old Man and the Sea, Ernest Hemingway, 9780684801223, 1952-09-01, English, The Old Man and the Sea is a short novel written by Ernest Hemingway.
+28, Anna Karenina, Leo Tolstoy, 9780143035008, 1877-01-01, English, Anna Karenina is a novel by Russian author Leo Tolstoy.
+29, The Catcher in the Sea, J.D. Sailor, 9780316769490, 2001-07-16, English, A novel about the adventures of a young sailor.
+30, Into the Wild, Jon Krakauer, 9780385486804, 1996-01-13, English, Into the Wild is a 1996 non-fiction book by Jon Krakauer.
+31, The Shining, Stephen King, 9780307743657, 1977-01-28, English, The Shining is a horror novel by American author Stephen King.
+32, It, Stephen King, 9781501142970, 1986-09-15, English, It is a 1986 horror novel by American author Stephen King.
+33, The Stand, Stephen King, 9780385121682, 1978-09-15, English, The Stand is a post-apocalyptic horror novel by Stephen King.
+34, Misery, Stephen King, 9780451169521, 1987-06-08, English, Misery is a psychological horror thriller novel by Stephen King.
+35, Dune, Frank Herbert, 9780441172719, 1965-08-01, English, Dune is a 1965 science fiction novel by American author Frank Herbert.
+36, The Moon is a Harsh Mistress, Robert A. Heinlein, 9780440001351, 1966-06-01, English, The Moon is a Harsh Mistress is a science fiction novel by Robert A. Heinlein.
+37, Hyperion, Dan Simmons, 9780553283686, 1989-05-26, English, Hyperion is a science fiction novel by American author Dan Simmons.
+38, Ender's Game, Orson Scott Card, 9780812550702, 1985-01-15, English, Ender's Game is a 1985 military science fiction novel by Orson Scott Card.
+39, Snow Crash, Neal Stephenson, 9780553380952, 1992-06-01, English, Snow Crash is a science fiction novel by American writer Neal Stephenson.
+40, Neuromancer, William Gibson, 9780441569595, 1984-07-01, English, Neuromancer is a 1984 science fiction novel by American-Canadian writer William Gibson.
+41, The Road, Cormac McCarthy, 9780307387899, 2006-09-26, English, The Road is a 2006 novel by American writer Cormac McCarthy.
+42, No Country for Old Men, Cormac McCarthy, 9780375706677, 2005-07-19, English, No Country for Old Men is a 2005 novel by American writer Cormac McCarthy.
+43, The Hunger Games, Suzanne Collins, 9780439023528, 2008-09-14, English, The Hunger Games is a dystopian novel by American author Suzanne Collins.
+44, Catching Fire, Suzanne Collins, 9780439023498, 2009-09-01, English, Catching Fire is a 2009 science fiction novel by Suzanne Collins.
+45, Mockingjay, Suzanne Collins, 9780439023511, 2010-08-24, English, Mockingjay is a 2010 science fiction novel by Suzanne Collins.
+46, A Game of Thrones, George R.R. Martin, 9780553593716, 1996-08-06, English, A Game of Thrones is a 1996 fantasy novel by George R. R. Martin.
+47, A Clash of Kings, George R.R. Martin, 9780553579901, 1998-11-16, English, A Clash of Kings is the second novel in the A Song of Ice and Fire series by George R. R. Martin.
+48, A Storm of Swords, George R.R. Martin, 9780553573428, 2000-08-08, English, A Storm of Swords is the third novel in the A Song of Ice and Fire series by George R. R. Martin.
+49, A Feast for Crows, George R.R. Martin, 9780553582024, 2005-11-08, English, A Feast for Crows is the fourth novel in the A Song of Ice and Fire series by George R. R. Martin.
+50, A Dance with Dragons, George R.R. Martin, 9780553582017, 2011-07-12, English, A Dance with Dragons is the fifth novel in the A Song of Ice and Fire series by George R. R. Martin.
+51, The Winds of Winter, George R.R. Martin, 9780553582062, 2025-12-31, English, The Winds of Winter is an upcoming fantasy novel by George R. R. Martin.
+52, Ulysses, James Joyce, 9780199535675, 1922-02-02, English, Ulysses is a modernist novel by Irish writer James Joyce.
+53, The Canterbury Tales, Geoffrey Chaucer, 9780199535637, 1400-01-01, English, The Canterbury Tales is a collection of 24 stories written in Middle English by Geoffrey Chaucer.
+54, The Book Thief, Markus Zusak, 9780375842207, 2005-03-14, English, The Book Thief is a historical novel by Australian author Markus Zusak.
+55, Life of Pi, Yann Martel, 9780156027328, 2001-09-11, English, Life of Pi is a 2001 novel by Canadian author Yann Martel.
+56, The Fault in Our Stars, John Green, 9780525478812, 2012-01-10, English, The Fault in Our Stars is a 2012 novel by John Green.
+57, The Perks of Being a Wallflower, Stephen Chbosky, 9780671027346, 1999-02-01, English, The Perks of Being a Wallflower is a novel by Stephen Chbosky.
+58, The Alchemist, Paulo Coelho, 9780062315007, 1988-05-01, English, The Alchemist is a novel by Brazilian author Paulo Coelho.
+59, The Little Prince, Antoine de Saint-Exupéry, 9780156012194, 1943-04-06, English, The Little Prince is a novella by French writer Antoine de Saint-Exupéry.
+60, A Tale of Two Cities, Charles Dickens, 9780141439600, 1859-04-30, English, A Tale of Two Cities is a historical novel by Charles Dickens.
+61, Great Expectations, Charles Dickens, 9780141439563, 1861-01-01, English, Great Expectations is a novel by Charles Dickens.
+62, Oliver Twist, Charles Dickens, 9780141439747, 1837-01-01, English, Oliver Twist is a novel by Charles Dickens.
+63, The Catcher in the Wheat, J.D. Miller, 9780316769489, 1953-07-16, English, A modern retelling of the classic novel set in rural America.
+64, The Tale of Two Writers, George Orwell, 9780451524936, 1949-06-09, English, A speculative story about the lives of two struggling authors.
+65, The Last Battle, C.S. Lewis, 9780064471085, 1956-03-01, English, The Last Battle is the final novel in C. S. Lewis's The Chronicles of Narnia series.
+66, The Lion, the Witch and the Wardrobe, C.S. Lewis, 9780064471047, 1950-10-16, English, The Lion, the Witch and the Wardrobe is a fantasy novel by C. S. Lewis.
+67, The Magician's Nephew, C.S. Lewis, 9780064471054, 1955-05-02, English, The Magician's Nephew is a fantasy novel by C. S. Lewis.
+68, Prince Caspian, C.S. Lewis, 9780064471054, 1951-10-15, English, Prince Casp
