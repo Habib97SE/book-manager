@@ -87,4 +87,12 @@ class BookFileReaderTest {
         assertThrows(IllegalArgumentException.class, () -> bookFileReader.getBookByIsbn("123456789"));
     }
 
+    @Test
+    void shouldAddNewBook () {
+        Book book = new Book(4, "The Great Gatsby", "F. Scott Fitzgerald", "9780743273565", "1925-04-10", "English", "The Great Gatsby is a novel by F. Scott Fitzgerald");
+        bookFileReader.addBook(book);
+        List<Book> books = bookFileReader.getBooks();
+        System.out.println(books);
+    }
+
 }

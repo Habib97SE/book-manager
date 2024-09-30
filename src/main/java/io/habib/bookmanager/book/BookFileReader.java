@@ -1,5 +1,6 @@
 package io.habib.bookmanager.book;
 
+import io.habib.bookmanager.book.DTO.BookDTO;
 import io.habib.bookmanager.book.model.Book;
 import org.springframework.stereotype.Component;
 
@@ -68,33 +69,8 @@ public class BookFileReader {
         return books;
     }
 
-    public List<Book> getBooksByAuthor(String author) {
-        List<Book> books = new ArrayList<>();
-        for (Book book : getBooks()) {
-            if (book.getAuthor().equals(author)) {
-                books.add(book);
-            }
-        }
-        return books;
-    }
 
-    public Book getBookById(Integer id) {
-        for (Book book : getBooks()) {
-            if (book.getId().equals(id)) {
-                return book;
-            }
-        }
-        throw new IllegalArgumentException("Book not found");
-    }
 
-    public Book getBookByIsbn(String isbn) {
-        for (Book book : getBooks()) {
-            if (book.getIsbn().equals(isbn)) {
-                return book;
-            }
-        }
-        throw new IllegalArgumentException("Book not found");
-    }
 
     public List<Book> getBooksByTitle(String theCatcherInTheRye) {
         List<Book> books = new ArrayList<>();
@@ -105,4 +81,39 @@ public class BookFileReader {
         }
         return books;
     }
+
+    public Boolean writeBookData(String bookData) {
+        try {
+            File file = new File(filePath);
+            FileWriter fileWriter = new FileWriter(file);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            for (Book book : getBooks()) {
+                String bookString = book.toString();
+                bufferedWriter.write(bookString);
+                bufferedWriter.newLine();
+            }
+
+            bufferedWriter.close();
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public Boolean addBook(Book book) {
+        try {
+            File file = new File(filePath);
+            FileWriter fileWriter = new FileWriter(file, true);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(book.toString());
+            bufferedWriter.newLine();
+            bufferedWriter.close();
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
 }
